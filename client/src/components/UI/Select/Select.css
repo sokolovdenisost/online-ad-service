@@ -1,0 +1,38 @@
+select::-ms-expand {
+    display: none;
+}
+
+.select-item {
+    padding: 10px 0 0px;
+}
+
+.select {
+    overflow: hidden;
+    width: 100%;
+    margin: 13px 0 22px;
+}
+
+.select-select {
+    display: block;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    outline: 0;
+    border: 1px solid var(--main-color);
+    border-radius: 6px;
+    background: #fff;
+    padding: 22px 30px;
+    width: 100%;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--main-color);
+    cursor: pointer;
+}
+
+.select-error {
+    position: absolute;
+    font-size: 14px;
+    color: var(--error-color);
+    font-weight: 700;
+}

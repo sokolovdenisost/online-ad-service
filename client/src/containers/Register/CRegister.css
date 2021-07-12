@@ -1,0 +1,35 @@
+.register-container {
+    position: relative;
+    margin: 0 250px 0 0;
+    height: 100vh;
+}
+
+@media (max-width: 1700px) {
+    .register-container {
+        margin: 0 200px 0 0;
+    }
+}
+
+@media (max-width: 1600px) {
+    .register-container {
+        margin: 0 175px 0 0;
+    }
+}
+
+@media (max-width: 1500px) {
+    .register-container {
+        margin: 0 150px 0 0;
+    }
+}
+
+@media (max-width: 1400px) {
+    .register-container {
+        margin: 0 150px 0 0;
+    }
+}
+
+@media (max-width: 1300px) {
+    .register-container {
+        margin: 0;
+    }
+}

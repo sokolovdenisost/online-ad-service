@@ -1,0 +1,51 @@
+.info-block {
+    margin: 10px 0 20px;
+}
+
+.info-fullName {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.info-date-register {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    color: var(--main-color-ad);
+    font-weight: 400;
+    margin: 10px 0;
+    padding-top: 10px;
+    border-top: 1px solid var(--main-color-ad);
+}
+
+.info-place {
+    font-size: 14px;
+    color: var(--main-color-ad);
+    font-weight: 400;
+    margin: 10px 0;
+    padding-top: 10px;
+    border-top: 1px solid var(--main-color-ad);
+    text-align: center;
+}
+
+.info-face {
+    font-size: 14px;
+    color: var(--main-color-ad);
+    font-weight: 400;
+    margin: 10px 0;
+    padding-top: 10px;
+    border-top: 1px solid var(--main-color-ad);
+    text-align: center;
+}
+
+.info-subs-follows {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    color: var(--main-color-ad);
+    font-weight: 400;
+    margin: 10px 0;
+    padding-top: 10px;
+    border-top: 1px solid var(--main-color-ad);
+}

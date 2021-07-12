@@ -1,0 +1,23 @@
+.register-block {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translate(0, -50%);
+    width: 430px;
+}
+
+.register-text {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.register-text a {
+    text-decoration: underline;
+}
+
+@media (max-width: 1300px) {
+    .register-block {
+        position: relative;
+        margin: 0 auto;
+    }
+}

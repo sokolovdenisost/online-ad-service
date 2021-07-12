@@ -1,0 +1,125 @@
+.ad-modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 999;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    transform: scale(0);
+}
+
+.ad-modal.active {
+    opacity: 1;
+    transform: scale(1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ad-modal-block {
+    z-index: 6;
+    height: 95vh;
+    padding: 5px;
+    width: 1300px;
+    border-radius: 10px;
+    background: #fff;
+    transform: scale(0.7);
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.ad-modal-block.active {
+    transform: scale(1);
+}
+
+.ad-modal-block-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    object-fit: cover;
+}
+
+.ad-modal-img {
+    max-width: 1290px;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.ad-modal-close {
+    z-index: 6;
+    cursor: pointer;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    width: 34px;
+    height: 34px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    border: 2px solid var(--navigator-noactive);
+}
+
+.ad-modal-arrow-left {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    z-index: 4;
+    width: 50px;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    border-radius: 10px 0 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    opacity: 0;
+}
+
+.ad-modal-arrow-left:hover {
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.ad-modal-block:hover .ad-modal-arrow-left {
+    opacity: 1;
+}
+
+.ad-modal-arrow-right {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    z-index: 5;
+    width: 50px;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    border-radius: 0 10px 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    opacity: 0;
+}
+
+.ad-modal-arrow-right:hover {
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.ad-modal-block:hover .ad-modal-arrow-right {
+    opacity: 1;
+}

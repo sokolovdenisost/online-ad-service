@@ -1,0 +1,23 @@
+.login-block {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translate(0, -50%);
+    width: 430px;
+}
+
+.login-text {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.login-text a {
+    text-decoration: underline;
+}
+
+@media (max-width: 1300px) {
+    .login-block {
+        position: relative;
+        margin: 0 auto;
+    }
+}

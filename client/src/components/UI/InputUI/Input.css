@@ -1,0 +1,56 @@
+.input-block {
+    position: relative;
+    width: 100%;
+    margin: 13px 0 22px;
+}
+
+.input {
+    display: block;
+    border: 1px solid var(--main-color);
+    border-radius: 6px;
+    font-size: 14px;
+    padding: 22px 30px;
+    width: 100%;
+    font-weight: 500;
+    color: var(--main-color);
+}
+
+.input-error {
+    position: absolute;
+    font-size: 14px;
+    color: var(--error-color);
+    font-weight: 700;
+}
+
+.input::placeholder {
+    color: var(--main-color);
+}
+
+.input-file {
+    padding: 22px 30px;
+    position: relative;
+    width: 100%;
+    margin: 13px 0 22px;
+    border: 1px solid var(--main-color);
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 500;
+    color: transparent;
+    text-align: center;
+    cursor: pointer;
+}
+
+.input-file::-webkit-file-upload-button {
+    display: none;
+}
+
+.input-file::before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    white-space: pre;
+    text-align: center;
+    color: var(--main-color);
+    content: 'Добавить фотографии';
+}

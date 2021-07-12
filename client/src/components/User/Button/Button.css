@@ -1,0 +1,42 @@
+.button-user {
+    width: 100%;
+    padding: 13px 0;
+    border-radius: 10px;
+    border: none;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+.button-user span {
+    margin-left: 5px;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.button-user.sub svg {
+    color: #2a6f2d;
+}
+
+.button-user.sub span {
+    color: #2a6f2d;
+}
+
+.button-user.sub {
+    background: #ecf7ed;
+}
+
+.button-user.unsub svg {
+    color: #9c2b23;
+}
+
+.button-user.unsub span {
+    color: #9c2b23;
+}
+
+.button-user.unsub {
+    background: #fee8e7;
+}

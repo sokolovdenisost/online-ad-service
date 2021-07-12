@@ -1,0 +1,42 @@
+.mymessage-block {
+    margin-left: auto;
+    margin-right: 10px;
+    max-width: 400px;
+    min-width: 150px;
+    margin: 10px 10px 10px auto;
+}
+
+.mymessage-block-check {
+    margin-right: 10px;
+}
+
+.mymessage-block-main {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.mymessage-text {
+    right: 0;
+    padding: 10px 15px;
+    border: 1px solid #ececec;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.0220444);
+    border-radius: 12px 12px 0px 12px;
+    background: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    max-width: 400px;
+    min-width: 150px;
+    word-wrap: break-word;
+}
+
+.mymessage-date {
+    right: 0;
+    max-width: 430px;
+    min-width: 150px;
+    text-align: right;
+    color: #b1b1b1;
+    font-size: 12px;
+    font-weight: 500;
+    margin-top: 5px;
+}

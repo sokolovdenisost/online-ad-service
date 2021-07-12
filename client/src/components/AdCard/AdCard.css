@@ -1,0 +1,152 @@
+.adcard-block {
+    display: block;
+    cursor: pointer;
+    width: 320px;
+    height: 346px;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.adcard-block:hover {
+    box-shadow: 0px 0px 50px 5px rgba(0, 0, 0, 0.1);
+}
+
+.adcard-image {
+    position: relative;
+    border-radius: 10px 10px 0 0;
+    width: 100%;
+    height: 200px;
+}
+
+.adcard-image img {
+    position: absolute;
+    border-radius: 10px 10px 0 0;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.adcard-favorite {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    border-radius: 100%;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.adcard-block:hover .adcard-favorite {
+    opacity: 1;
+}
+
+.adcard-block:hover .adcard-edit {
+    opacity: 1;
+}
+
+.adcard-favorite-hover {
+    border-radius: 100%;
+    background: #fff;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.adcard-favorite:hover {
+    transform: scale(1.1);
+}
+
+.adcard-edit {
+    display: block;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    border-radius: 100%;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.adcard-edit-hover {
+    border-radius: 100%;
+    background: #fff;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.adcard-edit:hover {
+    transform: scale(1.1);
+}
+
+.adcard-info {
+    padding: 15px 25px;
+}
+
+.adcard-info-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.adcard-category {
+    color: var(--main-color-ad);
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.adcard-date {
+    color: var(--main-color-ad);
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.adcard-title {
+    font-size: 20px;
+    color: #081f32;
+    font-weight: 400;
+    margin: 10px 0 15px;
+    width: 270px;
+    height: 55px;
+    word-wrap: break-word;
+}
+
+.adcard-info-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.adcard-user {
+    display: flex;
+    align-items: center;
+}
+
+.adcard-avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 100%;
+    background: #000;
+    margin-right: 5px;
+}
+
+.adcard-name {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--main-color-second);
+}
+
+.adcard-city {
+    font-size: 14px;
+    color: var(--main-color-ad);
+    font-weight: 700;
+}
+
+.adcard-price {
+    font-size: 14px;
+    color: var(--main-color-ad);
+    font-weight: 700;
+}

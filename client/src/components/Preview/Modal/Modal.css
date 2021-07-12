@@ -1,0 +1,37 @@
+.modal-overlay-preview {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    height: 100vh;
+    overflow: hidden;
+    background: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(2px);
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transform: scale(0);
+    transition: opacity 0.3s ease;
+}
+
+.modal-body-preview {
+    width: 320px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: scale(0.6);
+    transition: transform 0.3s ease;
+}
+
+.modal-overlay-preview.active {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.modal-body-preview.active {
+    transform: scale(1);
+}

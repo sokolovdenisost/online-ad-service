@@ -1,0 +1,23 @@
+.search {
+    display: block;
+    width: 280px;
+    margin: 10px auto;
+    background: #f7f8f9;
+    border-radius: 2px;
+    border: none;
+    color: #000000;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 11px 15px;
+    outline: none;
+}
+
+.search::placeholder {
+    color: #bfbfbf;
+}
+
+@media (max-width: 1380px) {
+    .search {
+        width: 250px;
+    }
+}

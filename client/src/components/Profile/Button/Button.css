@@ -1,0 +1,26 @@
+.profile-button {
+    cursor: pointer;
+    padding: 15px 20px;
+    border-radius: 10px;
+    border: none;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    transition: all 0.3s ease;
+}
+
+.profile-button.active {
+    background: var(--main-color-active);
+}
+
+.profile-button.active span {
+    color: var(--main-color-second);
+}
+
+.profile-button span {
+    font-weight: 600;
+    font-size: 14px;
+    color: var(--navigator-noactive);
+}

@@ -1,0 +1,6 @@
+.services-block {
+    display: grid;
+    grid-template-columns: 320px 320px 320px;
+    grid-column-gap: 25px;
+    grid-row-gap: 25px;
+}

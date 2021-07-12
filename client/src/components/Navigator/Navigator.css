@@ -1,0 +1,11 @@
+.navigator-block {
+    width: 120px;
+    position: fixed;
+    top: 50%;
+    right: 0;
+    background: rgba(255, 255, 255, 0.8);
+    transform: translate(0, -50%);
+    z-index: 2;
+    border-radius: 10px 0 0 10px;
+    backdrop-filter: blur(3px);
+}

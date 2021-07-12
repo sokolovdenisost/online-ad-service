@@ -1,0 +1,23 @@
+.edit-roof {
+    width: 900px;
+}
+
+@media (max-width: 1200px) {
+    .edit-block {
+        width: 800px;
+    }
+
+    .edit-roof {
+        width: 800px;
+    }
+}
+
+@media (max-width: 1060px) {
+    .edit-block {
+        width: 600px;
+    }
+
+    .edit-roof {
+        width: 600px;
+    }
+}

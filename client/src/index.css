@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Manrope', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+}
+
+:root {
+    --main-color: #8692a6;
+    --main-color-second: #1565d8;
+    --main-color-second-hover: #267dfa;
+    --main-color-active: #ebf2ff;
+    --navigator-noactive: #4a4b57;
+    --main-color-ad: #6e798c;
+    --background-section: #f5f6fa;
+
+    --error-color: #9c2b23;
+    --error-background: #fee8e7;
+    --error-icon: #c8372d;
+}

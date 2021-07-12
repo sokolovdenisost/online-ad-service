@@ -1,0 +1,21 @@
+.container-messages {
+    display: flex;
+    position: relative;
+    width: 1100px;
+    margin: 0 auto;
+    min-height: 100vh;
+    max-height: 100vh;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.04204);
+}
+
+@media (max-width: 1380px) {
+    .container-messages {
+        width: 900px;
+    }
+}
+
+@media (max-width: 1180px) {
+    .container-messages {
+        width: 750px;
+    }
+}

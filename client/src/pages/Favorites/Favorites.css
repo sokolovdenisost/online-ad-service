@@ -1,0 +1,40 @@
+.favorites-ads {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 320px 320px 320px 320px;
+    grid-column-gap: 25px;
+    grid-row-gap: 25px;
+}
+
+.favorites-noads {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+@media (max-width: 1700px) {
+    .favorites-ads {
+        grid-template-columns: 320px 320px 320px;
+        grid-column-gap: 40px;
+        grid-row-gap: 25px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .favorites-block {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 1300px) {
+    .favorites-ads {
+        grid-template-columns: 320px 320px;
+        grid-column-gap: 40px;
+        grid-row-gap: 25px;
+        align-items: center;
+        justify-content: center;
+    }
+}

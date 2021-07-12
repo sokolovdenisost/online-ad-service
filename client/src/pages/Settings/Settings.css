@@ -1,0 +1,23 @@
+.settings-block {
+    display: flex;
+}
+
+.settings-right {
+    height: auto;
+}
+
+@media (max-width: 1500px) {
+    .settings-block {
+        display: flex;
+        width: 1000px;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 1380px) {
+    .settings-block {
+        display: block;
+        width: 450px;
+        margin: 0 auto;
+    }
+}

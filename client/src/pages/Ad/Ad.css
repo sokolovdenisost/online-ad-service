@@ -1,0 +1,82 @@
+.ad-page {
+    margin: 0 0 50px;
+}
+
+.ad-page-roof {
+    display: flex;
+}
+
+.ad-page-user {
+    margin-left: 30px;
+}
+
+.ad-page-body {
+    width: 900px;
+    margin-top: 20px;
+}
+
+.ad-page-title {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.ad-page-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 5px 0;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ebe9e9;
+}
+
+.ad-page-price {
+    color: var(--navigator-noactive);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.ad-page-place {
+    display: flex;
+    align-items: center;
+}
+
+.ad-page-place span {
+    color: var(--navigator-noactive);
+    margin-left: 5px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.ad-page-description {
+    margin-top: 10px;
+}
+
+.ad-page-description-title {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.ad-page-description-text {
+    margin: 10px 0;
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--main-color-ad);
+}
+
+.ad-page-youtube {
+    padding-top: 10px;
+    border-top: 1px solid #ebe9e9;
+    margin-top: 10px;
+}
+
+.ad-page-youtube-title {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.ad-page-youtube-link {
+    margin: 10px 0;
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--main-color-ad);
+}

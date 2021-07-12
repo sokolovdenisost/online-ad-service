@@ -1,0 +1,21 @@
+.header-message {
+    width: 100%;
+    padding: 14px 15px;
+    border-bottom: 1px solid #f7f7f7;
+    margin-bottom: 10px;
+}
+
+.header-message-center {
+    text-align: center;
+}
+
+.header-message-fullname {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.header-message-status {
+    font-size: 14px;
+    font-weight: 400;
+    color: rgb(208, 208, 208);
+}

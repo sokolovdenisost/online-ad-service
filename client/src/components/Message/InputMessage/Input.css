@@ -1,0 +1,41 @@
+.input-message {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    width: 100%;
+    max-width: 710px;
+    bottom: 0;
+    margin: 15px 35px 30px;
+}
+
+.input-message-photo {
+    margin-right: 10px;
+}
+
+.input-message-input {
+    background: #ffffff;
+    border: 1px solid #e9e9e9;
+    box-sizing: border-box;
+    border-radius: 5px;
+    max-width: 620px;
+    width: 100%;
+    padding: 15px 20px;
+}
+
+.input-message-input::placeholder {
+    color: #b4b4b4;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.input-message-send {
+    margin-left: 10px;
+}
+
+@media (max-width: 1380px) {
+    .input-message {
+        width: 450px;
+        margin: 15px 25px 35px;
+    }
+}

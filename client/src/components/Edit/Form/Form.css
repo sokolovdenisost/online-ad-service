@@ -1,0 +1,200 @@
+/*  buttons  */
+.form-edit-footer .button {
+    margin: 0 25px;
+}
+
+.form-edit {
+    width: 900px;
+}
+
+.form-edit-roof {
+    width: 900px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-edit-photo {
+    margin: 0 auto 25px;
+    width: 320px;
+}
+
+.form-edit-photo-img {
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+    background: #eee;
+}
+
+.form-edit-photo-img img {
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.form-left {
+    width: 400px;
+}
+
+.form-right {
+    width: 400px;
+}
+
+.text-description {
+    max-width: 900px;
+    min-width: 900px;
+    min-height: 200px;
+    display: block;
+    border: 1px solid var(--main-color);
+    border-radius: 6px;
+    font-size: 14px;
+    padding: 22px 30px;
+    font-weight: 500;
+    color: var(--main-color);
+    margin: 13px 0 22px;
+}
+
+.text-description::placeholder {
+    color: var(--main-color);
+}
+
+.form-feedback-block {
+    width: 900px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-edit-photos-img {
+    display: flex;
+    align-items: center;
+    flex-flow: wrap;
+}
+
+.edit-ad-photo {
+    position: relative;
+}
+
+.edit-ad-image {
+    height: 110px;
+    border-radius: 10px;
+    object-fit: cover;
+    width: 150px;
+    margin: 0 5px 5px;
+    opacity: 1;
+    transition: all 0.3s ease;
+}
+
+.edit-ad-delete {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    position: absolute;
+    height: 110px;
+    width: 150px;
+    top: 0;
+    margin: 0 5px 5px;
+    background: rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.edit-ad-photo .edit-ad-delete:hover {
+    cursor: pointer;
+    opacity: 1;
+}
+
+.form-feedback-left {
+    width: 400px;
+}
+
+.form-feedback-right {
+    width: 400px;
+}
+
+.form-edit-footer {
+    width: 850px;
+    display: flex;
+    margin: 0 auto 50px;
+}
+
+@media (max-width: 1200px) {
+    .form-edit {
+        width: 800px;
+    }
+
+    .form-edit-roof {
+        width: 800px;
+    }
+
+    .form-left {
+        width: 350px;
+    }
+
+    .form-right {
+        width: 350px;
+    }
+
+    .text-description {
+        max-width: 800px;
+        min-width: 800px;
+    }
+
+    .form-feedback-block {
+        width: 800px;
+    }
+
+    .form-feedback-left {
+        width: 350px;
+    }
+
+    .form-feedback-right {
+        width: 350px;
+    }
+}
+
+@media (max-width: 1060px) {
+    .form-edit {
+        width: 600px;
+    }
+
+    .form-edit-roof {
+        width: 600px;
+        display: block;
+    }
+
+    .form-left {
+        width: 100%;
+    }
+
+    .form-right {
+        width: 100%;
+    }
+
+    .text-description {
+        max-width: 600px;
+        min-width: 600px;
+    }
+
+    .form-feedback-block {
+        width: 600px;
+        display: block;
+    }
+
+    .form-feedback-left {
+        width: 100%;
+    }
+
+    .form-feedback-right {
+        width: 100%;
+    }
+
+    .form-edit-footer {
+        width: 600px;
+        display: block;
+    }
+
+    .form-edit-footer .button {
+        margin: 10px 0;
+    }
+}

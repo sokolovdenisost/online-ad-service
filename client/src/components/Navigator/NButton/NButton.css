@@ -1,0 +1,36 @@
+.navigator-button {
+    display: block;
+    width: 120px;
+    padding: 26px 0;
+    border-radius: 10px 0 0 10px;
+    color: var(--navigator-noactive);
+    transition: all 0.4s ease;
+}
+
+.navigator-button svg {
+    display: block;
+    width: 24px;
+    margin: 0 auto;
+}
+
+.navigator-button span {
+    display: block;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.navigator-button-active {
+    display: block;
+    width: 120px;
+    padding: 26px 0;
+    color: var(--main-color-second);
+    background: var(--main-color-active);
+    transition: all 0.4s ease;
+}
+
+.button-navigator {
+    background: transparent;
+    border: none;
+}

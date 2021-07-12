@@ -1,0 +1,8 @@
+.center-container {
+    width: 100%;
+    padding-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: calc(100vh - 100px);
+}

@@ -1,0 +1,35 @@
+.login-container {
+    position: relative;
+    margin: 0 0 0 250px;
+    height: 100vh;
+}
+
+@media (max-width: 1700px) {
+    .login-container {
+        margin: 0 0 0 200px;
+    }
+}
+
+@media (max-width: 1600px) {
+    .login-container {
+        margin: 0 0 0 175px;
+    }
+}
+
+@media (max-width: 1500px) {
+    .login-container {
+        margin: 0 0 0 150px;
+    }
+}
+
+@media (max-width: 1400px) {
+    .login-container {
+        margin: 0 0 0 150px;
+    }
+}
+
+@media (max-width: 1300px) {
+    .login-container {
+        margin: 0;
+    }
+}

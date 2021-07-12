@@ -1,0 +1,29 @@
+.security-block {
+    min-width: 800px;
+    padding: 0 30px 30px;
+    border-radius: 10px;
+    min-height: 700px;
+}
+
+.security-footer {
+    margin: 0 auto;
+    width: 350px;
+}
+
+@media (max-width: 1500px) {
+    .security-block {
+        min-width: 500px;
+        padding: 0 30px 30px;
+        border-radius: 10px;
+        min-height: 700px;
+    }
+}
+
+@media (max-width: 1380px) {
+    .security-block {
+        min-width: 450px;
+        padding: 0 30px 30px;
+        border-radius: 10px;
+        min-height: auto;
+    }
+}

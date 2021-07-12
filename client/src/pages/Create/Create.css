@@ -1,0 +1,23 @@
+.create-roof {
+    width: 900px;
+}
+
+@media (max-width: 1200px) {
+    .create-block {
+        width: 800px;
+    }
+
+    .create-roof {
+        width: 800px;
+    }
+}
+
+@media (max-width: 1060px) {
+    .create-block {
+        width: 600px;
+    }
+
+    .create-roof {
+        width: 600px;
+    }
+}
