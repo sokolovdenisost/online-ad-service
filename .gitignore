@@ -3,7 +3,7 @@ node_modules
 dist
 client/node_modules
 /client/node_modules
-server/CONST.ts
-/server/CONST.ts
 /tmp
 tmp
+server/CONST
+/server/CONST
