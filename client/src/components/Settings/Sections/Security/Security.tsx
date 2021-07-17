@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { URL_API } from '../../../../CONSTS';
 import { Button } from '../../../UI/ButtonUI/Button';
 import { Input } from '../../../UI/InputUI/Input';
 import { Label } from '../../../UI/LabelUI/Label';
@@ -21,7 +22,7 @@ export const Security = ({ user }: ISecurity) => {
     });
 
     function changePassword() {
-        fetch('http://localhost:3001/settings/change-password', {
+        fetch(`${URL_API}/settings/change-password`, {
             method: 'POST',
             body: JSON.stringify({ ...form }),
             headers: {

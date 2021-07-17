@@ -6,6 +6,7 @@ import { AiOutlineSync } from 'react-icons/ai';
 import './Account.css';
 import { Subtitle } from '../../../UI/Subtitle/Subtitle';
 import { Notification } from '../../../UI/Notification/Notification';
+import { URL_API } from '../../../../CONSTS';
 
 export const Account = ({ user }: IAccount) => {
     const [avatar, setAvatar] = useState<IAvatar>({
@@ -40,7 +41,7 @@ export const Account = ({ user }: IAccount) => {
             formData.append(elem, info[elem]);
         }
 
-        fetch('http://localhost:3001/settings/change-personal', {
+        fetch(`${URL_API}/settings/change-personal`, {
             method: 'POST',
             body: formData,
         })

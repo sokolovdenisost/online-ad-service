@@ -8,6 +8,7 @@ import { IoIosCloseCircleOutline } from 'react-icons/io';
 import { BsQuestion } from 'react-icons/bs';
 import './Form.css';
 import { Modal } from '../../Preview/Modal/Modal';
+import { URL_API } from '../../../CONSTS';
 
 const CATEGORY = ['Одежда', 'Украшения', 'Мебель', 'Посуда', 'Техника', 'Книги', 'Недвижимость'];
 const WAY_COMMUNICATE = ['Телефон', 'Личные сообщения', 'Телефон или личные сообщения'];
@@ -154,7 +155,7 @@ export const Form = ({ setNotif }: IForm) => {
                 formData.append(elem, form[elem]);
             }
 
-            fetch('http://localhost:3001/ads/create', {
+            fetch(`${URL_API}/ads/create`, {
                 method: 'POST',
                 body: formData,
             })

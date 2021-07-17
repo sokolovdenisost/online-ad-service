@@ -11,6 +11,7 @@ import { Header } from '../../components/Message/HeaderMessage/Header';
 import { Input } from '../../components/Message/InputMessage/Input';
 import { useEffect } from 'react';
 import { Loader } from '../../components/UI/Loader/Loader';
+import { URL_API } from '../../CONSTS';
 
 export const Messages = () => {
     const history = useHistory();
@@ -69,7 +70,7 @@ export const Messages = () => {
             wsSend(info);
         }
 
-        fetch('http://localhost:3001/chat/rooms', {
+        fetch(`${URL_API}/chat/rooms`, {
             method: 'POST',
             body: JSON.stringify({ ...info }),
             headers: {
@@ -83,7 +84,7 @@ export const Messages = () => {
                 setLoading(false);
             });
 
-        fetch('http://localhost:3001/chat/get-messages', {
+        fetch(`${URL_API}/chat/get-messages`, {
             method: 'POST',
             body: JSON.stringify({ ...info }),
             headers: {

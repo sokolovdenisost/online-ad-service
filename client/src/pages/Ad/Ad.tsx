@@ -4,6 +4,7 @@ import { FiMapPin } from 'react-icons/fi';
 import { Photos } from '../../components/Ad/Photos/Photos';
 import { User } from '../../components/Ad/User/User';
 import { Loader } from '../../components/UI/Loader/Loader';
+import { URL_API } from '../../CONSTS';
 import { CMain } from '../../containers/Main/CMain';
 import { Error404 } from '../Error/404/404';
 import './Ad.css';
@@ -36,7 +37,7 @@ export const Ad = () => {
 
     useEffect(() => {
         const id = window.location.pathname.split('/')[2];
-        fetch(`http://localhost:3001/ads/${id}`)
+        fetch(`${URL_API}/ads/${id}`)
             .then((res) => res.json())
             .then((res) => {
                 if (res.error) {
@@ -58,7 +59,7 @@ export const Ad = () => {
         <CMain>
             <div className="ad-page">
                 <div className="ad-page-roof">
-                    <Photos arrayObj={[{ ad_photo_url: ad.ad_photo }, ...photos]} />
+                    <Photos arrayObj={photos} />
                     <div className="ad-page-user">
                         <User
                             way_com={ad.ad_way_communication}

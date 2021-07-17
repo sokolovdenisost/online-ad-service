@@ -16,7 +16,7 @@ export const Input = ({
         border: error ? '1px solid var(--error-color)' : '1px solid var(--main-color)',
     };
 
-    const [input, setInput] = useChangeInput('', setState);
+    const setInput = useChangeInput(setState);
 
     return (
         <div className="input-block">

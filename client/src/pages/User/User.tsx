@@ -7,6 +7,7 @@ import { Ads } from '../../components/Profile/Sections/Ads/Ads';
 import { Services } from '../../components/Profile/Sections/Services/Services';
 import { Loader } from '../../components/UI/Loader/Loader';
 import { Button } from '../../components/User/Button/Button';
+import { URL_API } from '../../CONSTS';
 import { CMain } from '../../containers/Main/CMain';
 import { Error404 } from '../Error/404/404';
 import './User.css';
@@ -24,7 +25,7 @@ export const User = () => {
         user_avatar: '',
     });
     const [ads, setAds] = useState<Array<IAds>>([]);
-    const [favoriteAds, setFavoriteAds] = useState([]);
+    const [favoriteAds, setFavoriteAds] = useState<Array<any>>([]);
     const [subscribers, setSubscribers] = useState<Array<ISubscribers>>([]);
     const [subscriptions, setSubscriptions] = useState<Array<ISubscribers>>([]);
     const [loading, setLoading] = useState(true);
@@ -42,7 +43,7 @@ export const User = () => {
 
     useEffect(() => {
         const id = window.location.pathname.split('/')[2];
-        fetch(`http://localhost:3001/user/${id}`)
+        fetch(`${URL_API}/user/${id}`)
             .then((res) => res.json())
             .then((res) => {
                 if (res.error) {
@@ -53,14 +54,14 @@ export const User = () => {
                 setLoading(true);
             });
 
-        fetch('http://localhost:3001/ads/favorites/' + user_id)
+        fetch(`${URL_API}/ads/favorites/#{user_id}`)
             .then((res) => res.json())
             .then((res) => {
                 setFavoriteAds(res.ads);
                 setLoading(true);
             });
 
-        fetch(`http://localhost:3001/subscribe/${id}`)
+        fetch(`${URL_API}/subscribe/${id}`)
             .then((res) => res.json())
             .then((res) => {
                 setSubscribers(res.subscribers);
@@ -71,8 +72,7 @@ export const User = () => {
 
     function toggleSubscribe() {
         const sub_to_id = window.location.pathname.split('/')[2];
-        console.log(sub_to_id);
-        fetch('http://localhost:3001/subscribe/toggle', {
+        fetch(`${URL_API}/subscribe/toggle`, {
             method: 'POST',
             body: JSON.stringify({ sub_to_id: sub_to_id, sub_id: user_id }),
             headers: {

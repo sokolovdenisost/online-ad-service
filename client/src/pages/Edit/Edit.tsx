@@ -4,6 +4,7 @@ import { Header } from '../../components/UI/HeaderUI/Header';
 import { Loader } from '../../components/UI/Loader/Loader';
 import { Notification } from '../../components/UI/Notification/Notification';
 import { Subtitle } from '../../components/UI/Subtitle/Subtitle';
+import { URL_API } from '../../CONSTS';
 import { CCenter } from '../../containers/Center/CCenter';
 import { Error404 } from '../Error/404/404';
 import './Edit.css';
@@ -36,7 +37,7 @@ export const Edit = () => {
     useEffect(() => {
         const id = window.location.pathname.split('/')[2];
         console.log(id);
-        fetch(`http://localhost:3001/ads/edit/${id}`)
+        fetch(`${URL_API}/ads/edit/${id}`)
             .then((res) => res.json())
             .then((res) => {
                 if (res.error) {

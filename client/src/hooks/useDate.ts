@@ -1,5 +1,3 @@
-import React from 'react';
-
 export const useDate = (date: string, type: string) => {
     const arrDate = date.split(', ');
     if (type === 'time') {

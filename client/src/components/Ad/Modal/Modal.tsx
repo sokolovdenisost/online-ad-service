@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { CgClose } from 'react-icons/cg';
 import { AiOutlineArrowLeft, AiOutlineArrowRight } from 'react-icons/ai';
 

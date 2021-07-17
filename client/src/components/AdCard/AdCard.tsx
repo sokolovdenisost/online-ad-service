@@ -5,6 +5,7 @@ import { BiEdit } from 'react-icons/bi';
 
 import './AdCard.css';
 import { useDate } from '../../hooks/useDate';
+import { URL_API } from '../../CONSTS';
 
 export const AdCard = ({
     id,
@@ -21,18 +22,17 @@ export const AdCard = ({
     const history = useHistory();
     const user_id = localStorage.getItem('user_id');
     const [isFavorite, setIsFavorite] = useState(favorite);
-    const [info, setInfo] = useState({
-        user_id: user_id,
-        ad_id: id,
-    });
 
     function toggleFavorite(e: React.MouseEvent) {
         e.preventDefault();
         setIsFavorite(!isFavorite);
 
-        fetch('http://localhost:3001/ads/favorite', {
+        fetch(`${URL_API}/ads/favorite`, {
             method: 'POST',
-            body: JSON.stringify({ ...info }),
+            body: JSON.stringify({
+                user_id: user_id,
+                ad_id: id,
+            }),
             headers: {
                 Accept: '*/*',
                 'Content-Type': 'application/json',

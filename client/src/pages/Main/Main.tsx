@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import { AdCard } from '../../components/AdCard/AdCard';
 import { Search } from '../../components/Main/Search/Search';
-import { Modal } from '../../components/Modal/Modal';
 import { Loader } from '../../components/UI/Loader/Loader';
+import { URL_API } from '../../CONSTS';
 import { CMain } from '../../containers/Main/CMain';
 import './Main.css';
 
@@ -18,13 +18,13 @@ export const Main = () => {
     const user_id = localStorage.getItem('user_id');
 
     useEffect(() => {
-        fetch('http://localhost:3001/ads/all')
+        fetch(`${URL_API}/ads/all`)
             .then((res) => res.json())
             .then((res) => {
                 setAds(res.ads);
             });
 
-        fetch('http://localhost:3001/ads/favorites/' + user_id)
+        fetch(`${URL_API}/ads/favorites/${user_id}`)
             .then((res) => res.json())
             .then((res) => {
                 setAdsIds(res.ads);
@@ -42,7 +42,7 @@ export const Main = () => {
         console.log(search);
     }, [search]);
 
-    function getHrefSearch() {
+    function getHrefSearch(): void {
         if (
             window.location.search.includes('?searchCategory=') &&
             window.location.search.includes('?searchValue=')

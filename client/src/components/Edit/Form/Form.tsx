@@ -3,11 +3,11 @@ import { useHistory } from 'react-router-dom';
 import { Button } from '../../UI/ButtonUI/Button';
 import { Input, InputFile } from '../../UI/InputUI/Input';
 import { Label } from '../../UI/LabelUI/Label';
-import { Loader } from '../../UI/Loader/Loader';
 import { Select } from '../../UI/Select/Select';
 import { Subtitle } from '../../UI/Subtitle/Subtitle';
 import { IoIosCloseCircleOutline } from 'react-icons/io';
 import './Form.css';
+import { URL_API } from '../../../CONSTS';
 
 const CATEGORY = ['Одежда', 'Украшения', 'Мебель', 'Посуда', 'Техника', 'Книги', 'Недвижимость'];
 const WAY_COMMUNICATE = ['Телефон', 'Личные сообщения', 'Телефон или личные сообщения'];
@@ -116,7 +116,7 @@ export const Form = ({ setNotif, form, setForm, photos, setPhotos }: IForm) => {
     function deleteAdToId() {
         const id = window.location.pathname.split('/')[2];
 
-        fetch(`http://localhost:3001/ads/delete/${id}`, {
+        fetch(`${URL_API}/ads/delete/${id}`, {
             method: 'POST',
             headers: {
                 Accept: '*/*',
@@ -153,7 +153,7 @@ export const Form = ({ setNotif, form, setForm, photos, setPhotos }: IForm) => {
                 formData.append(key, String(value));
             }
 
-            fetch(`http://localhost:3001/ads/edit/${id}`, {
+            fetch(`${URL_API}/ads/edit/${id}`, {
                 method: 'POST',
                 body: formData,
             })

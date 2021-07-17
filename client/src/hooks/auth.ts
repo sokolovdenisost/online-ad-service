@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
+import { URL_API } from '../CONSTS';
 
 interface IUser {
     user_id: number;
@@ -17,7 +18,7 @@ export const useAuth = () => {
 
     useEffect(() => {
         if (token) {
-            fetch('http://localhost:3001/auth/auth', {
+            fetch(`${URL_API}/auth/auth`, {
                 method: 'GET',
                 headers: {
                     Authorization: `Token ${token}`,

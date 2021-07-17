@@ -7,6 +7,7 @@ import { BsFillPlusSquareFill } from 'react-icons/bs';
 
 import './Navigator.css';
 import { NButton } from './NButton/NButton';
+import { URL_API } from '../../CONSTS';
 
 export const Navigator = ({ auth }: INavigator) => {
     const [location, setLocation] = useState('');
@@ -15,7 +16,7 @@ export const Navigator = ({ auth }: INavigator) => {
     async function logoutUser(e: React.MouseEvent) {
         localStorage.removeItem('token');
         localStorage.removeItem('user_id');
-        await fetch('http://localhost:3001/auth/logout', {
+        await fetch(`${URL_API}/auth/logout`, {
             headers: {
                 Authorization: `Token ${token}`,
             },

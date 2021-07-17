@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { AdCard } from '../../components/AdCard/AdCard';
 import { Loader } from '../../components/UI/Loader/Loader';
+import { URL_API } from '../../CONSTS';
 import { CMain } from '../../containers/Main/CMain';
 import './Favorites.css';
 
@@ -10,7 +11,7 @@ export const Favorites = () => {
     const user_id = localStorage.getItem('user_id');
 
     useEffect(() => {
-        fetch('http://localhost:3001/ads/favorites', {
+        fetch(`${URL_API}/ads/favorites`, {
             method: 'POST',
             body: JSON.stringify({ user_id: user_id }),
             headers: {
@@ -23,7 +24,7 @@ export const Favorites = () => {
                 setAds(res.ads);
                 setLoading(false);
             });
-    }, []);
+    }, [user_id]);
 
     const mapFavoriteAds = ads
         .map((a) => {

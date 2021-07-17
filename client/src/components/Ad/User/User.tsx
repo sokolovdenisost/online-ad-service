@@ -1,19 +1,19 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { ButtonOutline } from '../../UI/ButtonUI/Button';
 import { BiEnvelope, BiPhone } from 'react-icons/bi';
 import './User.css';
+import { URL_API } from '../../../CONSTS';
 
 export const User = ({ way_com, owner, telephone }: IUser) => {
     const user_id = localStorage.getItem('user_id');
-    const [data, setData] = useState({
-        owner: user_id,
-        enemy: owner.user_id,
-    });
 
     function createMessageRoom() {
-        fetch('http://localhost:3001/chat/add-message-room', {
+        fetch(`${URL_API}/chat/add-message-room`, {
             method: 'POST',
-            body: JSON.stringify({ ...data }),
+            body: JSON.stringify({
+                owner: user_id,
+                enemy: owner.user_id,
+            }),
             headers: {
                 Accept: '*/*',
                 'Content-Type': 'application/json',

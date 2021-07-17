@@ -3,6 +3,7 @@ import { Input } from '../../UI/InputUI/Input';
 import { Label } from '../../UI/LabelUI/Label';
 import { Button } from '../../UI/ButtonUI/Button';
 import './Form.css';
+import { URL_API } from '../../../CONSTS';
 
 export const Form = ({ setNotif }: IForm) => {
     const [form, setForm] = useState({
@@ -32,7 +33,7 @@ export const Form = ({ setNotif }: IForm) => {
 
         if (form.email && form.password && form.refpassword && validateEmail(form.email)) {
             if (form.password === form.refpassword) {
-                await fetch('http://localhost:3001/auth/register', {
+                await fetch(`${URL_API}/auth/register`, {
                     method: 'POST',
                     body: JSON.stringify({ ...form }),
                     headers: {

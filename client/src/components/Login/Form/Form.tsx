@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { URL_API } from '../../../CONSTS';
 import { Button } from '../../UI/ButtonUI/Button';
 import { Input } from '../../UI/InputUI/Input';
 import { Label } from '../../UI/LabelUI/Label';
@@ -24,7 +25,7 @@ export const Form = ({ setNotif }: IForm) => {
         checkValidate();
 
         if (form.email && form.password && validateEmail(form.email)) {
-            await fetch('http://localhost:3001/auth/login', {
+            await fetch(`${URL_API}/auth/login`, {
                 method: 'POST',
                 body: JSON.stringify({ ...form }),
                 headers: {

@@ -7,10 +7,12 @@ export const Ads = ({ ads, favoriteAds }: IAds) => {
     console.log(ads);
     const mapAds = ads
         .map((a) => {
-            const check = favoriteAds.filter((c) => c.favorite_id === a.ad_id);
+            const check = favoriteAds?.filter((c) => c.favorite_id === a.ad_id);
             return (
                 <AdCard
-                    favorite={check[0] && check[0].favorite_user === Number(user_id)}
+                    favorite={
+                        check ? check[0] && check[0].favorite_user === Number(user_id) : false
+                    }
                     id={a.ad_id}
                     name={a.ad_name}
                     category={a.ad_category}
