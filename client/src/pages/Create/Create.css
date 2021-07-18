@@ -21,3 +21,13 @@
         width: 600px;
     }
 }
+
+@media (max-width: 900px) {
+    .create-block {
+        width: 450px;
+    }
+
+    .create-roof {
+        width: 450px;
+    }
+}

@@ -42,3 +42,9 @@
         justify-content: center;
     }
 }
+
+@media (max-width: 950px) {
+    .ads-page-ads {
+        grid-template-columns: 320px;
+    }
+}

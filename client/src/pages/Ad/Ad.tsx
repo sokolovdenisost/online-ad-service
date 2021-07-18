@@ -57,38 +57,43 @@ export const Ad = () => {
 
     return (
         <CMain>
-            <div className="ad-page">
-                <div className="ad-page-roof">
-                    <Photos arrayObj={photos} />
-                    <div className="ad-page-user">
-                        <User
-                            way_com={ad.ad_way_communication}
-                            telephone={ad.ad_telephone}
-                            owner={owner}
-                        />
-                    </div>
-                </div>
-                <div className="ad-page-body">
-                    <div className="ad-page-title">{ad.ad_name}</div>
-                    <div className="ad-page-info">
-                        <div className="ad-page-price">Цена: {ad.ad_price} руб</div>
-                        <div className="ad-page-place">
-                            <FiMapPin size={25} color="4a4b57" />
-                            <span>{ad.ad_city}</span>
+            <div className="ad-container">
+                <div className="ad-page">
+                    <div className="ad-page-roof">
+                        <Photos arrayObj={photos} />
+                        <div className="ad-page-user">
+                            <User
+                                way_com={ad.ad_way_communication}
+                                telephone={ad.ad_telephone}
+                                owner={owner}
+                            />
                         </div>
                     </div>
-                    <div className="ad-page-description">
-                        <div className="ad-page-description-title">Описание</div>
-                        <div className="ad-page-description-text">{ad.ad_description}</div>
-                    </div>
-                    {ad.ad_youtube ? (
-                        <div className="ad-page-youtube">
-                            <div className="ad-page-youtube-title">Youtube</div>
-                            <a className="ad-page-youtube-link" target="blank" href={ad.ad_youtube}>
-                                Видео с youtube
-                            </a>
+                    <div className="ad-page-body">
+                        <div className="ad-page-title">{ad.ad_name}</div>
+                        <div className="ad-page-info">
+                            <div className="ad-page-price">Цена: {ad.ad_price} руб</div>
+                            <div className="ad-page-place">
+                                <FiMapPin size={25} color="4a4b57" />
+                                <span>{ad.ad_city}</span>
+                            </div>
                         </div>
-                    ) : null}
+                        <div className="ad-page-description">
+                            <div className="ad-page-description-title">Описание</div>
+                            <div className="ad-page-description-text">{ad.ad_description}</div>
+                        </div>
+                        {ad.ad_youtube ? (
+                            <div className="ad-page-youtube">
+                                <div className="ad-page-youtube-title">Youtube</div>
+                                <a
+                                    className="ad-page-youtube-link"
+                                    target="blank"
+                                    href={ad.ad_youtube}>
+                                    Видео с youtube
+                                </a>
+                            </div>
+                        ) : null}
+                    </div>
                 </div>
             </div>
         </CMain>

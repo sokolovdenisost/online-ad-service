@@ -5,3 +5,13 @@
 .settings-left {
     margin-right: 50px;
 }
+
+@media (max-width: 720px) {
+    .settings-navigator {
+        width: 300px;
+    }
+
+    .settings-left {
+        margin-right: 0;
+    }
+}

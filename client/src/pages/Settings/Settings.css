@@ -21,3 +21,15 @@
         margin: 0 auto;
     }
 }
+
+@media (max-width: 720px) {
+    .settings-block {
+        display: block;
+        width: 300px;
+        margin: 0 auto;
+    }
+
+    .settings-left {
+        width: 300px;
+    }
+}

@@ -21,3 +21,13 @@
         width: 600px;
     }
 }
+
+@media (max-width: 900px) {
+    .edit-block {
+        width: 450px;
+    }
+
+    .edit-roof {
+        width: 450px;
+    }
+}

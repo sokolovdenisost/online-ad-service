@@ -4,3 +4,19 @@
     grid-column-gap: 25px;
     grid-row-gap: 25px;
 }
+
+@media (max-width: 1500px) {
+    .services-block {
+        display: grid;
+        grid-template-columns: 320px 320px;
+        grid-column-gap: 25px;
+        grid-row-gap: 25px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .services-block {
+        display: block;
+        min-width: 300px;
+    }
+}

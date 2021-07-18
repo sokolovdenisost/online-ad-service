@@ -80,3 +80,13 @@
     background: var(--main-color-second-hover);
     border-radius: 5px;
 }
+
+@media (max-width: 1620px) {
+    .user-block {
+        width: 350px;
+    }
+
+    .user-description {
+        width: 288px;
+    }
+}

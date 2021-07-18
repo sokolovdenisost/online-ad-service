@@ -106,3 +106,24 @@
         margin-bottom: 50px;
     }
 }
+
+@media (max-width: 720px) {
+    .account-block {
+        width: 300px;
+        padding: 0;
+        margin-bottom: 50px;
+    }
+
+    .account-roof {
+        margin-bottom: 20px;
+    }
+
+    .account-roof label {
+        width: 300px;
+        height: 300px;
+    }
+
+    .account-footer {
+        width: 300px;
+    }
+}

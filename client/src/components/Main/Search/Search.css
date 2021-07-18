@@ -68,3 +68,49 @@
         width: 140px;
     }
 }
+
+@media (max-width: 950px) {
+    .main-search {
+        width: 550px;
+    }
+
+    .main-search-input {
+        width: 250px;
+    }
+
+    .main-search-select {
+        width: auto;
+    }
+
+    .main-search-button {
+        width: 140px;
+    }
+}
+
+@media (max-width: 800px) {
+    .main-search {
+        display: block;
+        width: 415px;
+        height: auto;
+    }
+
+    .main-search-input,
+    .main-search-select {
+        display: inline;
+        height: 51px;
+    }
+
+    .main-search-select {
+        border-radius: 0 6px 6px 0;
+    }
+
+    .main-search a {
+        display: block;
+        margin-top: 5px;
+    }
+
+    .main-search-button {
+        width: 100%;
+        border-radius: 6px;
+    }
+}

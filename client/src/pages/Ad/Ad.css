@@ -80,3 +80,14 @@
     font-weight: 500;
     color: var(--main-color-ad);
 }
+
+@media (max-width: 1620px) {
+    .ad-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .ad-page-body {
+        width: 750px;
+    }
+}

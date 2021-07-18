@@ -29,3 +29,17 @@
         justify-content: center;
     }
 }
+
+@media (max-width: 850px) {
+    .user-page {
+        display: block;
+    }
+
+    .user-left {
+        margin: 0 auto;
+    }
+
+    .user-right {
+        margin: 25px auto;
+    }
+}

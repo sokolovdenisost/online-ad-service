@@ -198,3 +198,49 @@
         margin: 10px 0;
     }
 }
+
+@media (max-width: 900px) {
+    .form-edit {
+        width: 450px;
+    }
+
+    .form-edit-roof {
+        width: 450px;
+        display: block;
+    }
+
+    .form-left {
+        width: 100%;
+    }
+
+    .form-right {
+        width: 100%;
+    }
+
+    .text-description {
+        max-width: 450px;
+        min-width: 450px;
+    }
+
+    .form-feedback-block {
+        width: 450px;
+        display: block;
+    }
+
+    .form-feedback-left {
+        width: 100%;
+    }
+
+    .form-feedback-right {
+        width: 100%;
+    }
+
+    .form-edit-footer {
+        width: 450px;
+        display: block;
+    }
+
+    .form-edit-footer .button {
+        margin: 10px 0;
+    }
+}
