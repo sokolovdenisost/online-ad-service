@@ -23,7 +23,8 @@
     "client": "npm run start --prefix client",
     "build": "tsc",
     "server": "tsc && nodemon dist/index.js",
-    "start": "concurrently \"npm run client\" \"npm run server\""
+    "dev": "concurrently \"npm run client\" \"npm run server\"",
+    "start": "node dist/index.js"
   },
   "author": "",
   "license": "ISC",
