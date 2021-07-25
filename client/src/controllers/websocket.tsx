@@ -1,4 +1,4 @@
-export const wsConnection = new WebSocket('ws://localhost:8080/chat/message');
+export const wsConnection = new WebSocket('ws://localhost:8000/chat/message');
 
 wsConnection.addEventListener('open', function (event: Event) {
     console.log('Соединение установлено.');

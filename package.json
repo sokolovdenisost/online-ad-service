@@ -13,7 +13,7 @@
     "express-fileupload": "^1.2.1",
     "express-ws": "^5.0.2",
     "jsonwebtoken": "^8.5.1",
-    "mysql": "^2.18.1",
+    "mysql": "^2.15.18",
     "ws": "^7.5.0"
   },
   "name": "xxx",
@@ -23,7 +23,7 @@
     "client": "npm run start --prefix client",
     "build": "tsc",
     "server": "tsc && nodemon dist/index.js",
-    "dev": "concurrently \"npm run client\" \"npm run server\""
+    "start": "concurrently \"npm run client\" \"npm run server\""
   },
   "author": "",
   "license": "ISC",

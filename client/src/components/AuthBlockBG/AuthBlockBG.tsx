@@ -1,13 +1,10 @@
 import React from 'react';
 import './AuthBlockBG.css';
-import backgroundImage from '../../assets/images/auth_bg.png';
 
 export const AuthBlockBG = ({ position }: IAuthBlockBG) => {
     return (
         <div className={'auth-block ' + position}>
-            <div className="auth-block-bg">
-                <img src={backgroundImage} alt="" />
-            </div>
+            <div className="auth-block-bg"></div>
             <div className="auth-block-color"></div>
             <div className="auth-block-info">
                 <div className="auth-block-quote">

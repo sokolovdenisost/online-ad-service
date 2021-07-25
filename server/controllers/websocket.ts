@@ -2,7 +2,7 @@ import { connection } from '../db';
 const WebSocketServer = require('ws');
 
 const webSocketServerChat = new WebSocketServer.Server({
-    port: 8080,
+    port: 8000,
     path: '/chat/message',
 });
 
