@@ -8,7 +8,7 @@ const mysql = require('mysql');
 //     database: 'service',
 //     port: 3306,
 // });
-const connection = mysql.createConnection('mysql://root:29891969Вв@localhost/service');
+const connection = mysql.createConnection('mysql://root:29891969Вв@95.106.153.112/service');
 exports.connection = connection;
 connection.connect((err) => {
     if (err) {
